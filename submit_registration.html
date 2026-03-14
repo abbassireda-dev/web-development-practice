@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+    }
+
+    .success-message {
+        color: #4CAF50;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .success-image {
+        margin-top: 20px;
+        max-width: 400px; /* increased image size */
+        width: 100%;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Registration Form</h2>
+
+    <div class="success-message" id="successMessage">
+        Registration successful!
+    </div>
+    <img class="success-image" src="Thank-you-for-registering.webp" alt="Success Image">
+</div>
+
+<script>
+    // Display success message when the page loads
+    window.onload = function() {
+        document.getElementById("successMessage").style.display = "block";
+    };
+</script>
+
+</body>
+</html>
